@@ -1,0 +1,20 @@
+group 'na'
+version '1.0-SNAPSHOT'
+description = "Spring Boot tutorial on using gradle"
+
+apply plugin: 'java'
+apply plugin: 'application'
+mainClassName = 'hello.HelloWorld'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile "joda-time:joda-time:2.2"
+    compile "junit:junit:4.12"
+}

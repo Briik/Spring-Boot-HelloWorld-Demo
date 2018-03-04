@@ -1,0 +1,9 @@
+.class
+.gradle/
+*/build
+build/
+.gradletasknamecache
+!gradle-wrapper.jar
+
+.idea
+.idea/*.xml
