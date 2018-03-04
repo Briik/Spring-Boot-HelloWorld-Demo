@@ -4,7 +4,7 @@ description = "Spring Boot tutorial on using gradle"
 
 apply plugin: 'java'
 apply plugin: 'application'
-mainClassName = 'hello.HelloWorld'
+mainClassName = 'hello.Application'
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
@@ -15,6 +15,7 @@ repositories {
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile "org.springframework.boot:spring-boot-starter-web:2.0.0.RELEASE"
     compile "joda-time:joda-time:2.2"
-    compile "junit:junit:4.12"
+    testCompile "junit:junit:4.12"
 }
